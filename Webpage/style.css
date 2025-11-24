@@ -13,11 +13,13 @@
   --brand: #000000;
 }
 
+
 body {
-    background-image: url("Background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("Background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -25,8 +27,6 @@ body {
   margin: auto;
   padding: 20px 20px;
 }
-
-
 .site-header {
   background: none;
   color: black;
@@ -38,6 +38,7 @@ body {
   font-size: 60px;
   letter-spacing: 1px;
   color: black;
+  font-family: 'Poppins', sans-serif;
 }
 
 .site-nav a {
@@ -46,11 +47,11 @@ body {
   opacity: 10;
   text-decoration: none;
 }
+
 .site-nav a.active {
   border-bottom: 2px solid black;
   padding-bottom: 2px;
 }
-
 
 .site-footer {
   border-top: 1px solid var(--line);
@@ -59,19 +60,18 @@ body {
   color: var(--muted);
 }
 
-
 .page-title {
   font-size: 30px;
   margin-bottom: 18px;
   color: black;
 }
 
-
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 3fr));
   gap: 16px;
 }
+
 .product-card {
   background: var(--card);
   border: 1px solid var(--line);
@@ -100,7 +100,6 @@ body {
   font-size: 0.9rem;
 }
 
-
 .btn {
   margin-top: auto;
   display: inline-block;
@@ -116,3 +115,4 @@ body {
 .btn:hover {
   background:#333;
 }
+
