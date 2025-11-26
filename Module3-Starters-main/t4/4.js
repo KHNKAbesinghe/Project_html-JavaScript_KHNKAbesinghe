@@ -1,15 +1,24 @@
 'use strict';
 const students = [
-  {value: "2345768", name: "John"},
-  {value: "2134657", name: "Paul"},
-  {value: "5423679", name: "Jones"}
+  {
+    name: 'John',
+    id: '2345768',
+  },
+  {
+    name: 'Paul',
+    id: '2134657',
+  },
+  {
+    name: 'Jones',
+    id: '5423679',
+  },
 ];
 
 const target = document.getElementById('target');
 
 students.forEach(st => {
   const opt = document.createElement('option');
-  opt.value = st.value;
-  opt.textContent = st.name;
+  opt.value = st.id;          // FIXED: use st.id
+  opt.textContent = st.name;  // option label
   target.appendChild(opt);
 });
